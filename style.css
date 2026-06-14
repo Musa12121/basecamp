@@ -78,7 +78,14 @@ button:hover{
 input{
     padding: 8px 10px;
     border-radius: 3px;
-    border: 1px solid lightgray;
+    outline: 1px solid lightgray;
+    transition: 300ms all ease;
+    border: none;
+}
+
+input:focus{
+    outline: 1px solid rgb(66, 165, 251);
+    box-shadow: 0 0 5px 4px rgb(66, 165, 251);
 }
 
 a{
