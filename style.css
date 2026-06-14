@@ -1,0 +1,116 @@
+html,
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.maintitle {
+    font-size: 55px;
+    font-family: Anton, sans-serif;
+    letter-spacing: 4px;
+}
+
+h1,p{
+        text-align: center;
+
+}
+
+img{
+    height: 215px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-around;
+}
+
+button{
+    background-color: #0097b5;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    transition: 200ms all ease;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+button:hover{
+    background-color: #00798e;
+}
+
+.disappear{
+    display: none !important;
+}
+
+.register{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 30%;
+}
+
+.formblock{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+input{
+    padding: 8px 10px;
+    border-radius: 3px;
+    border: 1px solid lightgray;
+}
+
+a{
+    text-decoration: none;
+}
+
+.withtext{
+    position: relative;
+}
+
+.withtext::after{
+    content: 'Must be at least 6 characthers long';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    color: gray;
+    bottom: 0;
+}
+
+.registerlowerpart{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.registerlowerpart p{
+    margin-top: 3px;
+}
+
+@media (max-width:420px){
+    .register{
+        width: 80%;
+    }
+}
