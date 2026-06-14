@@ -97,7 +97,17 @@ a{
     color: gray;
     bottom: 0;
 }
-
+.registerupperpart{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.registerupmiddle{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
 .registerlowerpart{
     display: flex;
     flex-direction: column;
