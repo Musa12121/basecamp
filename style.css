@@ -110,7 +110,7 @@ a{
     margin-top: 3px;
 }
 
-@media (max-width:420px){
+@media (max-width:890px){
     .register{
         width: 80%;
     }
