@@ -19,16 +19,16 @@
         <div class="buttons"><button id="register">Sign up</button>
         <button id="login">Login</button></div>
     </div>
-    <div class="register disappear">
+    <form class="register disappear">
         <img src="./converted.svg" alt="">
         <h1>Sign up</h1>
-        <div class="formblock"><label for="name">Name</label><input type="text" id="name"></div>
-        <div class="formblock"><label for="email">Email</label><input type="email" id="email"></div>
+        <div class="formblock"><label for="name">Name</label><input type="text" id="name" required></div>
+        <div class="formblock"><label for="email">Email</label><input type="email" id="email" required></div>
         <div class="formblock"><label for="password">Password</label><input type="password" id="password" class="withtext"><span style="color: gray;">Must be at least 6 characthers long</span></div>
         <div class="formblock"><label for="passwordrepeat">Password confirmation</label><input type="password" id="passwordrepeat"></div>
-        <div class="registerlowerpart"><button id="submitbtn">Sign Up</button>
+        <div class="registerlowerpart"><button type="submit" id="submitbtn">Sign Up</button>
         <p>Already a member? <a href="#" id="loginlink">Log in</a></p></div>
-    </div>
+    </form>
     <script src="script.js"></script>
 </body>
 
