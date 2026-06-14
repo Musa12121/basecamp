@@ -89,16 +89,6 @@ a{
     position: relative;
 }
 
-.withtext::after{
-    content: 'Must be at least 6 characthers long';
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: auto;
-    color: gray;
-    bottom: 0;
-}
-
 .registerlowerpart{
     display: flex;
     flex-direction: column;
