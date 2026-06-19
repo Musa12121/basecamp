@@ -57,6 +57,10 @@ main {
     align-items: center;
 }
 
+.disappear{
+    display: none;
+}
+
 main .inputblock {
     display: flex;
     flex-direction: column;

@@ -15,19 +15,27 @@
     <nav>
         <div><img src="./converted.svg" alt=""></div>
         <div class="rightsideofnav">
-            <a href="#"><i class="fa-solid fa-plus" style="color: rgb(106, 197, 204);"></i>Add Project</a>
+            <a href="#" class="newprojectbtn"><i class="fa-solid fa-plus" style="color: rgb(106, 197, 204);"></i>Add
+                Project</a>
             <a href="#"><i class="fa-solid fa-gear" style="color: rgb(106, 197, 204);"></i>Edit profile</a>
             <a href="#"><i class="fa-solid fa-door-open" style="color: rgb(106, 197, 204);"></i>Log Out</a>
         </div>
     </nav>
     <main>
-        <div class="wrapper">
+        <div class="default">
+            <h1>Projects</h1>
+            <a href="#">All projects</a>
+            <a href="#">Created by me</a>
+            <a href="#">Shared with me</a>
+        </div>
+        <div class="newprojectpage disappear">
             <h1>New Project</h1>
             <div class="inputblock"><label for="">Name</label><input type="text"></div>
             <div class="inputblock"><label for="">Description</label><textarea rows="3"></textarea></div>
             <div class="buttondiv"><button>Create Project</button></div>
         </div>
     </main>
+    <script src="account.js"></script>
 </body>
 
 </html>
