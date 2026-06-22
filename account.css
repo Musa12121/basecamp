@@ -29,7 +29,7 @@ img {
     width: 150px;
 }
 
-a {
+.rightsideofnav a {
     text-decoration: none;
     font-size: 18px;
     color: #30acba;
@@ -102,4 +102,32 @@ label {
 .buttondiv {
     display: flex;
     justify-content: center;
+}
+.default{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.default h1{
+        text-align: center;
+        font-size: 45px;
+}
+
+.default .links{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+
+.default a{
+    padding: 5px 95px;
+    background-color: lightgray;
+    color: rgb(82, 82, 82);
+    text-decoration: none;
+    margin: 10px;
+    font-size: 20px;
 }
