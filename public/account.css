@@ -38,7 +38,6 @@ img {
 
 .rightsideofnav {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
 }
 
@@ -84,12 +83,12 @@ textarea {
     outline: 1px solid lightgray;
 }
 
-input {
-    padding: 6px 11px;
+.newprojectpage textarea{
+    resize: none;
 }
 
-input:focus,
-textarea:focus {
+.newprojectpage input:focus,
+.newprojectpage textarea:focus {
     outline: 1px solid rgb(66, 165, 251);
     box-shadow: 0 0 5px 4px rgb(66, 165, 251);
 }
@@ -133,6 +132,17 @@ label {
     font-size: 20px;
 }
 
+.newprojectpage input {
+    padding: 8px 11px;
+}
+.newprojectpage h1{
+    font-size: 80px;
+}
+
+.newprojectpage button{
+    margin: 10px;
+}
+
 @media screen and (max-width:1050px){
     .links{
         flex-direction: column;
@@ -143,4 +153,10 @@ label {
     .textnexttoicon{
         display: none;
     }
+    .rightsideofnav{
+
+    }
+    .newprojectpage h1{
+    font-size: 50px;
+}
 }
