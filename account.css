@@ -58,7 +58,7 @@ main {
 }
 
 .disappear{
-    display: none;
+    display: none !important;
 }
 
 main .inputblock {
@@ -117,17 +117,26 @@ label {
 
 .default .links{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: 40px;
-    flex-wrap: wrap;
+
+    text-wrap: nowrap;
 }
 
 
-.default a{
+.link a{
     padding: 5px 95px;
     background-color: lightgray;
     color: rgb(82, 82, 82);
     text-decoration: none;
     margin: 10px;
     font-size: 20px;
+}
+
+@media screen and (max-width:1050px){
+    .links{
+        flex-direction: column;
+    }
+    .link a{
+    } 
 }
