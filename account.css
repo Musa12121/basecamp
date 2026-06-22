@@ -136,7 +136,11 @@ label {
 @media screen and (max-width:1050px){
     .links{
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
     }
-    .link a{
-    } 
+    .textnexttoicon{
+        display: none;
+    }
 }
