@@ -126,10 +126,8 @@ label {
     display: flex;
     justify-content: space-between;
     margin-top: 40px;
-
     text-wrap: nowrap;
 }
-
 
 .link a{
     padding: 5px 95px;
@@ -138,6 +136,12 @@ label {
     text-decoration: none;
     margin: 10px;
     font-size: 20px;
+    transition: 300ms all ease;
+}
+
+.link a:hover{
+    background-color: rgb(87, 87, 87);
+    color: white;
 }
 
 .newprojectpage input {
