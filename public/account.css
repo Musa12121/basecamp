@@ -136,11 +136,17 @@ label {
     padding: 8px 11px;
 }
 .newprojectpage h1{
-    font-size: 80px;
+    font-size: 70px;
 }
 
 .newprojectpage button{
     margin: 10px;
+}
+
+.newprojectpage{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 @media screen and (max-width:1050px){
@@ -152,9 +158,6 @@ label {
     }
     .textnexttoicon{
         display: none;
-    }
-    .rightsideofnav{
-
     }
     .newprojectpage h1{
     font-size: 50px;
