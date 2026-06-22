@@ -34,6 +34,14 @@ img {
     font-size: 18px;
     color: #30acba;
     margin: 5px;
+    transition: 300ms all ease;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.rightsideofnav a:hover{
+    background-color: #0096ad;
+    color: white;
 }
 
 .rightsideofnav {
