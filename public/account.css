@@ -152,6 +152,11 @@ label {
 
 .newprojectpage button {
     margin: 10px;
+    transition: 300ms all ease;
+}
+
+.newprojectpage button:hover{
+    background-color: rgb(101, 101, 101);
 }
 
 .newprojectpage textarea{
