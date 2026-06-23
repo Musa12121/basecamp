@@ -1,6 +1,8 @@
 let button=document.querySelector('.newprojectbtn')
 let newprojectpage=document.querySelector('.newprojectpage')
 let defaultpage=document.querySelector('.default')
+let description=document.getElementById("description")
+let title=document.getElementById("title")
 
 let addProjectBtn=document.getElementById('newProjectButton').value
 
