@@ -9,38 +9,61 @@
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcr dIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="account.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
     <nav>
         <div><img src="./converted.svg" alt=""></div>
         <div class="rightsideofnav">
-            <a href="#" class="newprojectbtn"><i class="fa-solid fa-plus" style="color: rgb(106, 197, 204);"></i><span class="textnexttoicon">Add Project</span></a>
-            <a href="#"><i class="fa-solid fa-gear" style="color: rgb(106, 197, 204);"></i><span class="textnexttoicon">Edit profile</span></a>
-            <a href="#"><i class="fa-solid fa-door-open" style="color: rgb(106, 197, 204);"></i><span class="textnexttoicon">Log Out</span></a>
+            <a href="#" class="newprojectbtn"><i class="fa-solid fa-plus" style="color: rgb(106, 197, 204);"></i><span
+                    class="textnexttoicon">Add Project</span></a>
+            <a href="#"><i class="fa-solid fa-gear" style="color: rgb(106, 197, 204);"></i><span
+                    class="textnexttoicon">Edit profile</span></a>
+            <a href="#"><i class="fa-solid fa-door-open" style="color: rgb(106, 197, 204);"></i><span
+                    class="textnexttoicon">Log Out</span></a>
         </div>
     </nav>
     <main>
         <div class="default">
             <h1>Projects</h1>
-            <div class="links"><div class="link"><a href="#">All projects</a></div>
-            <div class="link"><a href="#">Created by me</a></div>
-            <div class="link"><a href="#">Shared with me</a></div></div>
+            <div class="links">
+                <div class="link"><a href="#">All projects</a></div>
+                <div class="link"><a href="#">Created by me</a></div>
+                <div class="link"><a href="#">Shared with me</a></div>
+            </div>
+                        <ul class="projectList">
+                <li class="project">
+                    <div class="newProjectPart1">
+                        <div>
+                            <h3>New Project!!</h3>
+                            <div>
+                                <i class="fa-solid fa-pen"></i>
+                                <span>email@gmail.com</span>
+                            </div>
+                        </div>
+                        <div class="newProjectIcon1">
+                            <i class="fa-solid fa-gear"></i>
+                        </div>
+                    </div>
+                    <div class="newProjectPart2"><p>Description</p></div>
+                    <div class="newProjectPart3">
+                        <i class="fa-solid fa-user-group"></i><span class="userCount">1</span>
+                        <i class="fa-solid fa-comments"></i><span class="commentCount">0</span>
+                        <i class="fa-regular fa-trash-can" style="color: rgb(255, 255, 255);"></i></div>
+                </li>
+            </ul>
         </div>
         <div class="newprojectpage disappear">
             <h1>New Project</h1>
             <div class="inputblock"><label for="">Name</label><input type="text" id="newProjectName"></div>
-            <div class="inputblock"><label for="">Description</label><textarea rows="5" id="newProjectdDescription"></textarea></div>
+            <div class="inputblock"><label for="">Description</label><textarea rows="5"
+                    id="newProjectdDescription"></textarea></div>
             <div class="buttondiv"><button id="newProjectButton">Create Project</button></div>
         </div>
-        <div class="projectListPage">
-            <ul class="projectList">
-                <li class="project">
-                    <h3></h3>
-                </li>
-            </ul>
-        </div>
+
     </main>
     <script src="account.js"></script>
 </body>
