@@ -196,6 +196,7 @@ label {
     flex-wrap: wrap;
     list-style-type: none;
     margin: 25px 0;
+    gap: 20px;
 }
 
 .project {
