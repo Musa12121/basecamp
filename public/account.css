@@ -39,7 +39,7 @@ img {
     border-radius: 5px;
 }
 
-.rightsideofnav a:hover{
+.rightsideofnav a:hover {
     background-color: #0096ad;
     color: white;
 }
@@ -64,20 +64,13 @@ main {
     align-items: center;
 }
 
-.disappear{
+.disappear {
     display: none !important;
 }
 
 main .inputblock {
     display: flex;
     flex-direction: column;
-}
-
-.wrapper {
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
 }
 
 .wrapper h1 {
@@ -88,10 +81,10 @@ input,
 textarea {
     transition: 200ms all ease;
     border: none;
-    outline: 1px solid lightgray;
+    outline: 1px solid rgb(139, 139, 139);
 }
 
-.newprojectpage textarea{
+.newprojectpage textarea {
     resize: none;
 }
 
@@ -110,26 +103,26 @@ label {
     display: flex;
     justify-content: center;
 }
-.default{
-    width: 60%;
+
+.default {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.default h1{
-        text-align: center;
-        font-size: 45px;
+.default h1 {
+    text-align: center;
+    font-size: 45px;
 }
 
-.default .links{
+.default .links {
     display: flex;
     justify-content: space-between;
     margin-top: 40px;
     text-wrap: nowrap;
 }
 
-.link a{
+.link a {
     padding: 5px 95px;
     background-color: lightgray;
     color: rgb(82, 82, 82);
@@ -139,39 +132,55 @@ label {
     transition: 300ms all ease;
 }
 
-.link a:hover{
-    background-color: rgb(87, 87, 87);
+.link a:hover {
+    background-color: #5e6a73;
     color: white;
+}
+
+.newprojectpage{
+    width: 50%;
 }
 
 .newprojectpage input {
     padding: 8px 11px;
 }
-.newprojectpage h1{
-    font-size: 70px;
+
+.newprojectpage h1 {
+    font-size: 60px;
+    text-align: center;
 }
 
-.newprojectpage button{
+.newprojectpage button {
     margin: 10px;
 }
 
-.newprojectpage{
+.newprojectpage textarea{
+    padding: 10px;
+}
+
+.newprojectpage {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-@media screen and (max-width:1050px){
-    .links{
+@media screen and (max-width:1050px) {
+    .links {
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 20px;
     }
-    .textnexttoicon{
+
+    .textnexttoicon {
         display: none;
     }
-    .newprojectpage h1{
-    font-size: 50px;
-}
+
+    .newprojectpage h1 {
+        font-size: 50px;
+    }
+
+    .newprojectpage{
+        width: 75%;
+    }
 }
