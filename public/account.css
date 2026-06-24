@@ -10,6 +10,10 @@ body {
     box-sizing: border-box;
 }
 
+p,span,h3{
+    cursor: default;
+}
+
 body {
     display: flex;
     flex-direction: column;

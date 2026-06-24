@@ -1,8 +1,7 @@
 let button = document.querySelector('.newprojectbtn')
 let newprojectpage = document.querySelector('.newprojectpage')
 let defaultpage = document.querySelector('.default')
-let projectList = document.querySelector(".projectList")
-
+let projectList = document.querySelector('.projectList')
 let addProjectBtn = document.getElementById('newProjectButton')
 
 button.addEventListener('click', () => {
@@ -35,7 +34,7 @@ addProjectBtn.addEventListener('click', () => {
                     <div class="newProjectPart3">
                         <div><i class="fa-solid fa-user-group"></i><span class="userCount">1</span>
                         <i class="fa-solid fa-comments"></i><span class="commentCount">0</span></div>
-                        <i class="fa-regular fa-trash-can" style="color: rgb(255, 255, 255);"></i></div>`;
+                        <i class="fa-regular fa-trash-can delete" style="color: rgb(255, 255, 255);"></i></div>`;
     projectList.appendChild(card);
     newprojectpage.classList.toggle("disappear");
     defaultpage.classList.toggle("disappear");
@@ -43,3 +42,8 @@ addProjectBtn.addEventListener('click', () => {
     projectInfo.value = '';
 })
 
+projectList.addEventListener('click',e=>{
+    if(e.target.classList.contains("delete")){
+        e.target.parentElement.parentElement.remove();
+    }
+})
