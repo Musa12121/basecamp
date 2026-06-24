@@ -3,6 +3,7 @@ let newprojectpage = document.querySelector('.newprojectpage')
 let defaultpage = document.querySelector('.default')
 let projectList = document.querySelector('.projectList')
 let addProjectBtn = document.getElementById('newProjectButton')
+let settingsPage=document.querySelector('.settingsPage')
 
 button.addEventListener('click', () => {
     let projectName = document.getElementById('newProjectName')
@@ -27,7 +28,7 @@ addProjectBtn.addEventListener('click', () => {
                             </div>
                         </div>
                         <div class="newProjectIcon1">
-                            <i class="fa-solid fa-gear"></i>
+                            <i class="fa-solid fa-gear settings"></i>
                         </div>
                     </div>
                     <div class="newProjectPart2"><p id="description">${projectInfo.value}</p></div>
@@ -45,5 +46,8 @@ addProjectBtn.addEventListener('click', () => {
 projectList.addEventListener('click',e=>{
     if(e.target.classList.contains("delete")){
         e.target.parentElement.parentElement.remove();
+    }
+    else if(e.target.classList.contains("settings")){
+        settingsPage.style.display='flex';
     }
 })
