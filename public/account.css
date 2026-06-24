@@ -196,13 +196,15 @@ label {
     flex-wrap: wrap;
     list-style-type: none;
     margin: 25px 0;
-    gap: 20px;
+    gap: 25px;
+    padding: 0 50px;
+    justify-content: space-evenly;
 }
 
 .project {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
-    width: 250px;
+    width: 250px; 
 }
 
 .newProjectPart1 {
