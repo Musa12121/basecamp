@@ -24,7 +24,7 @@
         </div>
     </nav>
     <main>
-        <div class="default disappear">
+        <div class="default disappear"> <!--didnt have disappear-->
             <h1>Projects</h1>
             <div class="links">
                 <div class="link"><a href="#">All projects</a></div>
@@ -34,32 +34,31 @@
             <ul class="projectList">
             </ul>
         </div>
-        <div class="settingsPage">
+        <div class="settingsPage "> <!--had disappear-->
             <main class="settingMain">
-                <div class="settingsContainer">
-                    <h1>Edit Project</h1>
-                    <i></i><span>Created by: toto@gmail.com</span>
+                <div class="wrapperInsideMain">
+                    <div><h1>Edit Project</h1>
+                    <i class="fa-solid fa-pen"></i><span>Created by: toto@gmail.com</span></div>
                     <div class="wrapperOfInputBlock">
                         <div class="inputBlockSettings">
                             <label for="nameInputs">Name</label><input type="text">
-                        </div><button>Update Name</button>
+                        </div><div><button>Update Name</button></div>
                     </div>
                     <div class="wrapperOfInputBlock">
                         <div class="inputBlockSettings">
-                             <label for="nameInputs">Description</label><textarea name="" id=""></textarea>
-                        </div><button>Update Description</button>
+                             <label for="nameInputs">Description</label><textarea rows="3"></textarea>
+                        </div><div><button>Update Description</button></div>
                     </div>
                     <div class="wrapperOfInputBlock">
                         <div class="inputBlockSettings">
                              <label for="nameInputs">Add Member (email)</label><input type="text">
                         </div><div class="specialCheck"><input type="checkbox" id="check"><label for="check">Admin</label></div><i class="fa-solid fa-user"></i>
                     </div>
-                </div>
             </main>
             <aside>
                 <div class="asideContainer">
-                    <div><i class="fa-regular fa-eye"></i>Project Overview</div>
-                    <div><i class="fa-regular fa-trash-can"></i>Delete Project</div>
+                    <button id="overview"><i class="fa-regular fa-eye"></i>Project Overview</button>
+                    <button id="deleteproject"><i class="fa-regular fa-trash-can"></i>Delete Project</button>
                 </div>
             </aside>
         </div>
@@ -70,7 +69,7 @@
                     id="newProjectdDescription"></textarea></div>
             <div class="buttondiv"><button id="newProjectButton">Create Project</button></div>
         </div>
-
+</div>
     </main>
     <script src="account.js"></script>
 </body>

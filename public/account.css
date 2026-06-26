@@ -278,9 +278,38 @@ label {
 }
 .settingMain{
     display: flex;
-    flex-direction: column;
-background-color: #0096ad;
+    justify-content: center;
+    align-items: center;
+    background-color: #0098b2;
 }
 aside{
-background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#overview{
+    background-color: #0098b2;
+}
+#deleteproject{
+    background-color: transparent;
+    color: #869093;
+}
+.inputBlockSettings{
+    width: 65%;
+}
+.inputBlockSettings input{
+    padding: 8px;
+}
+
+.wrapperOfInputBlock{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.wrapperInsideMain{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 75%;
 }
