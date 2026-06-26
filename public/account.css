@@ -82,7 +82,7 @@ main .inputblock {
     text-align: center;
 }
 
-input[type='text'],input[type='email'],input[type='password']
+input[type='text'],input[type='email'],input[type='password'],
 textarea {
     transition: 200ms all ease;
     border: none;
@@ -93,8 +93,8 @@ textarea {
     resize: none;
 }
 
-.newprojectpage input:focus,
-.newprojectpage textarea:focus {
+ input:focus,
+ textarea:focus {
     outline: 1px solid rgb(66, 165, 251);
     box-shadow: 0 0 5px 4px rgb(66, 165, 251);
 }
@@ -280,7 +280,7 @@ label {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #0098b2;
+    padding-top: 25px;
 }
 aside{
     display: flex;
@@ -312,4 +312,5 @@ aside{
     flex-direction: column;
     gap: 50px;
     width: 75%;
+    height: 100%;
 }
