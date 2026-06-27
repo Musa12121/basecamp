@@ -99,7 +99,8 @@ textarea {
     padding: 10px;
 }
 
-input:focus,
+input[type='text']:focus,input[type='email']:focus,
+input[type='password']:focus,
 textarea:focus {
     outline: 1px solid rgb(66, 165, 251);
     box-shadow: 0 0 5px 4px rgb(66, 165, 251);
@@ -293,6 +294,7 @@ label {
 aside {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
@@ -349,5 +351,56 @@ i.fa-solid.fa-user-plus {
     border-radius: 5px;
     &:hover{
         background-color: #eeac04;
+    }
+}
+
+.specialCheck{
+    display: flex;
+    align-items: center;
+}
+
+input[type='checkbox']{
+    appearance: none;
+    width: 35px;
+    height: 22px;
+    border: 1px solid rgb(103, 103, 103);
+    border-radius: 20px;
+    transition: 300ms all ease;
+    position: relative;
+    &:checked{
+        background-color: rgb(0, 26, 255);
+    }
+}
+
+input[type='checkbox']::before{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    margin: 1px;
+    background-color: gray;
+    border-radius: 50%;
+    transition: 300ms all ease;
+}
+
+input[type='checkbox']:checked:before{
+    translate: 75%;
+    background-color: white;
+}
+
+@media (max-width:395px){
+
+    .settingsPage{
+        grid-template-columns: 1fr;
+    }
+    .asideContainer button{
+        margin: 10px;
+    }
+    .settingMain{
+        justify-content: left;
+        padding-left: 20px;
     }
 }
