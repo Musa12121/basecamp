@@ -60,6 +60,7 @@ button {
     border-radius: 2px;
     padding: 10px 15px;
     border: none;
+    cursor: pointer;
 }
 
 main {
@@ -91,6 +92,7 @@ textarea {
 
 textarea {
     resize: none;
+    padding: 10px;
 }
 
  input:focus,
@@ -288,7 +290,11 @@ aside{
     gap: 20px;
 }
 #overview{
-    background-color: #0098b2;
+    background-color:  #05a2bd;
+    border-radius: 5px;
+    &:hover{
+        background-color: #0098b2;
+    }
 }
 #deleteproject{
     background-color: transparent;
@@ -298,13 +304,13 @@ aside{
     width: 65%;
 }
 .inputBlockSettings input{
-    padding: 8px;
+    padding: 9px;
 }
 
 .wrapperOfInputBlock{
     display: flex;
     gap: 20px;
-    align-items: center;
+    align-items: flex-end;
 }
 
 .wrapperInsideMain{
@@ -314,3 +320,10 @@ aside{
     width: 75%;
     height: 100%;
 }
+
+.buttonDiv button{
+    background-color: #5e6772;
+}
+.buttonDiv button:hover{
+     background-color:#515b61;
+ }
